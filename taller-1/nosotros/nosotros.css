@@ -40,30 +40,20 @@ li {
     list-style-type: none;
 }
 
-/* Section Background */
-.home,
+
 .about,
-.services,
-.plans,
-.work,
-.contact {
+.work {
     height: 110vh;
     position: relative;
 }
 
-.services,
+
 .work,
-.contact,
-.testimonial,
 .footer {
     background-color: var(--primary);
 }
 
-.about,
-.plans,
-.company,
-.newsletter,
-.location {
+.about {
     background-color: var(--primary-light);
 }
 
@@ -71,15 +61,8 @@ li {
     background-color: black;
 }
 
-/* Gradient Border And Background On Icons */
-.home_text,
-.home .fas,
-.plans .far,
-.informacion .fas,
-.work .fas,
-.services .fas,
-.location .far,
-.location .fas {
+
+.work .fas {
     padding: 15px 0;
     background: -webkit-gradient(linear,
             left top,
@@ -321,166 +304,6 @@ li {
     transform: translate(5px, 5px);
 }
 
-
-/********************/
-/*     Services     */
-/********************/
-.services .card {
-    padding: 20px;
-    border-radius: 0;
-    border: 2px solid white;
-}
-
-.services .card:hover {
-    border: 10px solid;
-    transform: scale(1.01);
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: var(--gradient);
-    box-shadow: 5px 5px 0px 0px #0ee951;
-}
-
-
-/*****************/
-/*     Plans     */
-/*****************/
-.plans .card {
-    padding: 20px;
-    border: 2px solid white;
-}
-
-
-/************************/
-/*     Testimonials     */
-/************************/
-.slider-1 {
-    padding-top: 8.25rem;
-    padding-bottom: 8.5rem;
-}
-
-.slider-1 .section-title {
-    text-align: center;
-}
-
-.slider-1 .h2-heading {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.testimonial-card {
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 3px;
-    border-image-source: var(--gradient);
-}
-
-.slider-1 .slider-container {
-    position: relative;
-}
-
-.slider-1 .swiper-container {
-    width: 86%;
-    position: static;
-}
-
-.slider-1 .swiper-button-prev,
-.slider-1 .swiper-button-next {
-    color: var(--primary);
-}
-
-.slider-1 .swiper-button-prev:focus,
-.slider-1 .swiper-button-next:focus {
-    /* even if you can't see it chrome you can see it on mobile device */
-    outline: none;
-}
-
-.slider-1 .swiper-button-prev {
-    left: -14px;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-    background-size: 18px 28px;
-}
-
-.slider-1 .swiper-button-next {
-    right: -14px;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-    background-size: 18px 28px;
-}
-
-.slider-1 .card {
-    border: none;
-    position: relative;
-    background-color: transparent;
-}
-
-.slider-1 .card-image {
-    width: 80px;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    margin-bottom: 1.25rem;
-}
-
-.slider-1 .card-body {
-    padding: 0;
-}
-
-.slider-1 .testimonial-text {
-    margin-bottom: 0.75rem;
-}
-
-.slider-1 .testimonial-author {
-    margin-bottom: 0;
-    color: #252c38;
-}
-
-.slider-1 .avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-/* Dropdown Menu */
-.navbar .dropdown .dropdown-menu {
-    animation: fadeDropdown 0.2s;
-    /* required for the fade animation */
-}
-
-@-webkit-keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/**********************/
-/*     Newsletter     */
-/**********************/
-.form-control-input,
-.form-control-textarea {
-    width: 100%;
-    appearance: none;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    padding-left: 1.5rem;
-    padding-top: 0.775rem;
-    padding-bottom: 0.775rem;
-}
 
 
 /******************************/

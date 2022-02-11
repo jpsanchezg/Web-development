@@ -1,3 +1,16 @@
+
+function hizoClick() {
+    //mostrar el formulario de contacto 
+    var name = document.getElementById("name").value;
+
+    var correo = document.getElementById("uemail").value;
+    var asunto = document.getElementById("asunto").value;
+    var mensaje = document.getElementById("mensaje").value;
+    alert('Ingreso el nombre:' + name + ' el correo:' + correo + ' asunto:' + asunto + ' y el mensaje:' + mensaje);
+
+    console.log(asunto)
+}
+
 window.onscroll = function () {
     scrollFunction();
     scrollFunctionBTT(); // back to top button
@@ -124,3 +137,6 @@ AOS.init({
     easing: "ease",
     once: true, // whether animation should happen only once - while scrolling down
 });
+
+
+
