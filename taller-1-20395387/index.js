@@ -1,6 +1,6 @@
 window.onscroll = function () {
     scrollFunction();
-    scrollFunctionBTT(); // back to top button
+    scrollFunctionBTT();
 };
 
 function scrollFunction() {
@@ -18,7 +18,6 @@ function scrollFunction() {
     }
 }
 
-// HOVER ON DESKTOP
 function toggleDropdown(e) {
     const _d = e.target.closest(".dropdown");
     let _m = document.querySelector(".dropdown-menu", _d);
@@ -35,7 +34,6 @@ function toggleDropdown(e) {
     );
 }
 
-// ON HOVER
 const dropdownCheck = document.querySelector(".dropdown");
 
 if (dropdownCheck !== null) {
@@ -60,7 +58,6 @@ if (dropdownCheck !== null) {
     });
 }
 
-/* CARD SLIDER - SWIPER */
 var cardSlider = new Swiper(".card-slider", {
     autoplay: {
         delay: 4000,
@@ -74,11 +71,11 @@ var cardSlider = new Swiper(".card-slider", {
     slidesPerView: 3,
     spaceBetween: 70,
     breakpoints: {
-        // when window is <= 767px
+
         767: {
             slidesPerView: 1,
         },
-        // when window is <= 991px
+
         991: {
             slidesPerView: 2,
             spaceBetween: 40,
@@ -86,11 +83,10 @@ var cardSlider = new Swiper(".card-slider", {
     },
 });
 
-/* BACK TO TOP BUTTON */
-// GET THE BUTTON
+
 myButton = document.getElementById("myBtn");
 
-// WHEN THE USER SCROLLS DOWN 20PX FROM THE TOP OF THE DOCUMENT, SHOW THE BUTTON
+
 function scrollFunctionBTT() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         myButton.style.display = "block";
@@ -99,15 +95,14 @@ function scrollFunctionBTT() {
     }
 }
 
-// WHEN THE USER CLICKS ON THE BUTTON, SCROLL TO THE TOP OF THE DOCUMENT
 function topFunction() {
-    document.body.scrollTop = 0; // for Safari
-    document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 // AOS ANIMATION ON SCROLL
 AOS.init({
     duration: 1000,
     easing: "ease",
-    once: true, // whether animation should happen only once - while scrolling down
+    once: true,
 });
