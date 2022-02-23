@@ -21,7 +21,7 @@ function scrollFunction() {
 function toggleDropdown(e) {
     const _d = e.target.closest(".dropdown");
     let _m = document.querySelector(".dropdown-menu", _d);
-
+    
     setTimeout(
         function () {
             const shouldOpen = _d.matches(":hover");
